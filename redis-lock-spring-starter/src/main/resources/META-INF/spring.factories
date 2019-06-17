@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.qingyuan1232.redis.lock.spring.config.LockAutoConfiguration
