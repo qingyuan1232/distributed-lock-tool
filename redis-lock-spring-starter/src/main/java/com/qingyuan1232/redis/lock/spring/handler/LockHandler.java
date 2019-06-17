@@ -59,7 +59,7 @@ public class LockHandler {
                     logger.debug("释放锁成功,key:{}", key);
                 }
             }
-        } else {
+        } else if (lock.lockFailHandler() != null && lock.lockFailHandler().trim().length() > 0) {
             if (logger.isDebugEnabled()) {
                 logger.debug("获取锁失败,key:{}", key);
             }
